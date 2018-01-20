@@ -1,4 +1,4 @@
-package com.hxh.using_lottie;
+package com.hxh.lottie;
 
 import android.animation.ValueAnimator;
 import android.content.Context;
