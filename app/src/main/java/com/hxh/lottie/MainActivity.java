@@ -1,7 +1,6 @@
 package com.hxh.lottie;
 
 import android.animation.ValueAnimator;
-import android.content.Context;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
@@ -13,21 +12,15 @@ import com.airbnb.lottie.LottieAnimationView;
 
 public class MainActivity extends AppCompatActivity
 {
-    private static final String LOGO = "lottielogo.json";
+    private static final String LOGO = "lottie.json";
     private static final String NUMBER = "number.json";
     private static final String ANDROID = "android.json";
-//    private static final String PLANTS = "notdownload.json";
-//    private static final String PLANTS = "plants.json";
-//    private static final String PLANTS = "arrow.json";
-    private static final String PLANTS = "data.json";
+    private static final String CRANE = "crane.json";
 
     private String title = LOGO;
 
-    private Context mContext = this;
-
     private LottieAnimationView lav;
     private TextView tv_seek;
-    private Switch swi;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -35,9 +28,9 @@ public class MainActivity extends AppCompatActivity
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        lav = (LottieAnimationView) findViewById(R.id.lav);
-        swi = (Switch) findViewById(R.id.swi);
-        tv_seek = (TextView) findViewById(R.id.tv_seek);
+        lav = findViewById(R.id.lav);
+        Switch swi = findViewById(R.id.swi);
+        tv_seek = findViewById(R.id.tv_seek);
 
         lav.addAnimatorUpdateListener(new ValueAnimator.AnimatorUpdateListener()
         {
@@ -77,7 +70,7 @@ public class MainActivity extends AppCompatActivity
         lav.cancelAnimation();
     }
 
-    public void logo(View v)
+    public void lottie(View v)
     {
         title = LOGO;
 
@@ -104,9 +97,9 @@ public class MainActivity extends AppCompatActivity
         lav.playAnimation();
     }
 
-    public void plants(View v)
+    public void crane(View v)
     {
-        title = PLANTS;
+        title = CRANE;
 
         setAnimation();
 

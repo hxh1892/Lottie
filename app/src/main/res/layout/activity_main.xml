@@ -21,8 +21,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@color/colorAccent"
-            android:onClick="logo"
-            android:text="Lottie Logo"
+            android:onClick="lottie"
+            android:text="Lottie"
             android:textAllCaps="false"
             android:textColor="@android:color/white"/>
 
@@ -51,8 +51,8 @@
             android:layout_height="wrap_content"
             android:layout_marginLeft="10dip"
             android:background="@color/colorAccent"
-            android:onClick="plants"
-            android:text="Plants"
+            android:onClick="crane"
+            android:text="Crane"
             android:textAllCaps="false"
             android:textColor="@android:color/white"/>
 
